@@ -1,0 +1,92 @@
+:root { /* per definir variables globals*/
+ --color_vora: #006400;
+}
+
+
+@font-face {
+    font-family: Caveat;
+    src: url('../fonts/Caveat-VariableFont_wght.ttf');
+  }
+
+
+* {box-sizing: border-box;} /* en aquesta pràctica no cal, però sovint és recomanable */
+
+
+body {
+    font-family: sans-serif;
+    background-image: url('../img/pentagon.png');
+    margin: 0;
+}
+
+#contenidor {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 35em;
+    background-color: #c7f0e9;
+    border-left: 0.3em solid var(--color_vora); /* podríem utilitzar variables per no repetir codis de color: https://www.w3schools.com/css/css3_variables.asp */
+    border-right: 0.3em solid var(--color_vora);
+    padding: 1em;
+
+
+}
+
+h1 {
+    border: 0.7rem double var(--color_vora);
+    border-radius: 1rem;
+    background-image: url('../img/bg_green.png');
+    margin: 0;
+    font-family: Caveat;
+    text-align: center;
+    padding: 0.7em;
+    text-shadow: 0.05em 0.05em 0 #0008; /* color negre semitransparent*/
+
+}
+
+h1:hover {
+    background-color: yellow;
+    background-image: none;
+}
+
+section {
+    border: 0.3rem solid var(--color_vora);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    padding: 0.3rem;
+}
+
+h2 {
+    background-color: green;
+    color: white;
+    margin: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.3em 1em;
+    font-size: large;
+    border-bottom: 0.2rem solid black;
+}
+
+pre {
+    margin: 3em;
+    overflow-x: auto;
+}
+
+pre.sortida {
+    background-color: black;
+    color:lightgrey;
+    padding: 2em;
+    
+}
+
+.comentari { color: green; }
+
+.string { color: red;}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: green;
+}
+
+footer a:link, footer a:visited { /* Seleccionar dins el footer els enllaços normals i els visitats*/
+    color: green;
+}
